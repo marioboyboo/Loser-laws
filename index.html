@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Official Loser Laws</title>
+    <style>
+        :root {
+            --primary: #ff4757;
+            --bg: #1e272e;
+            --text: #ffffff;
+            --card-bg: #2f3542;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+        }
+
+        /* The Loser Laws Box */
+        .law-box {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            margin: 2rem 0;
+            display: inline-block;
+            border: 3px solid white;
+        }
+
+        .audio-section {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .rules-list {
+            text-align: left;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .rules-list h2 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 1rem 0;
+            border-bottom: 1px solid #3e4451;
+            font-size: 1.1rem;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .rule-num {
+            color: var(--primary);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        audio {
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Loser</h1>
+        
+        <div class="law-box">
+            LOSER LAWS
+        </div>
+
+        <div class="audio-section">
+            <p>Listen to the Official Decree:</p>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="rules-list">
+            <h2>The Standard Mandates</h2>
+            <ul>
+                <li><span class="rule-num">01.</span> The last player remaining is the ultimate loser.</li>
+                <li><span class="rule-num">02.</span> No player shall dispute the dealer's final word.</li>
+                <li><span class="rule-num">03.</span> If a "Loser Law" is broken, the offender must draw a penalty card.</li>
+                <li><span class="rule-num">04.</span> All scores must be visible to the group at all times.</li>
+                <li><span class="rule-num">05.</span> Silence is required during the "Executioner's Round."</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
